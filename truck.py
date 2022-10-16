@@ -9,9 +9,6 @@ from package import packageHashTable
 loadPackageData('./csv/packages.csv')
 
 
-p = packageHashTable.search(1)
-
-
 class Truck:
     def __init__(self, packages, departure, miles):
         self.packageList = packages
@@ -20,10 +17,6 @@ class Truck:
 
 
 truck1 = ChainingHashTable()
-truck1.__init__(40)
-
-
-print(truck1.search(1))
 
 
 # Truck 1 --> Departs at 8:00
@@ -41,6 +34,9 @@ for i in range(len(truckOnePackages)):
     truck1.insert(truckOnePackages[i],
                   packageHashTable.search(truckOnePackages[i]))
 
+
 print("Packages from package hash table:")
 for i in range(len(truck1.table)+1):
-    print("Package ID: {}".format(truck1.search(i+1)))
+    if truck1.search(i) == None:
+        continue
+    print("Package ID: {}".format(truck1.search(i)))
