@@ -3,9 +3,9 @@ import csv
 
 
 class Package:
-    def __init__(self, ID, address, city, state, Zip, deadline, mass, notes, status):
+    def __init__(self, ID, destination, city, state, Zip, deadline, mass, notes, status):
         self.ID = ID
-        self.address = address
+        self.destination = destination
         self.city = city
         self.state = state
         self.Zip = Zip
@@ -13,9 +13,10 @@ class Package:
         self.mass = mass
         self.notes = notes
         self.status = status
+        # Add delivery time
 
     def __str__(self):
-        return "%s, %s, %s, %s, %s, %s, %s, %s, %s" % (self.ID, self.address, self.city, self.state, self.Zip, self.deadline, self.mass, self.notes, self.status)
+        return "%s, %s, %s, %s, %s, %s, %s, %s, %s" % (self.ID, self.destination, self.city, self.state, self.Zip, self.deadline, self.mass, self.notes, self.status)
 
 
 def loadPackageData(file):
@@ -24,7 +25,7 @@ def loadPackageData(file):
         next(packageData)
         for package in packageData:
             packageID = int(package[0])
-            packageAddress = package[1]
+            packageDestination = package[1]
             packageCity = package[2]
             packageState = package[3]
             packageZip = package[4]
@@ -33,7 +34,7 @@ def loadPackageData(file):
             packageNotes = package[7]
             packageStatus = "Loaded"
 
-            p = Package(packageID, packageAddress, packageCity, packageState,
+            p = Package(packageID, packageDestination, packageCity, packageState,
                         packageZip, packageDeadline, packageMass, packageNotes, packageStatus)
 
             packageHashTable.insert(packageID, p)
