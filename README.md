@@ -1,39 +1,9 @@
-Package Delivery Simulation
-This repository contains a package delivery simulation using Python and the nearest neighbor algorithm. The purpose of this project is to demonstrate the use of data structures and algorithms in solving simulated real-world problems.
-
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-Prerequisites
-Python 3.x
-NumPy
-Matplotlib (for visualizing results)
-Installing
-Clone the repository to your local machine:
-
-Copy code
-git clone https://github.com/yourusername/package-delivery-simulation.git
-Running the simulation
-To run the simulation, navigate to the root directory of the project and run the following command:
-
-Copy code
-python main.py
-This will execute the simulation using the default settings, which include a grid size of 100x100 and 10 package locations.
-
-Customizing the simulation
-You can customize the simulation by modifying the variables in the config.py file. The following variables can be modified:
-
-GRID_SIZE: The size of the grid (default: 100x100)
-NUM_PACKAGES: The number of package locations (default: 10)
-ALGORITHM: The algorithm used for package delivery (default: "nearest_neighbor")
-Viewing results
-The simulation results can be visualized using Matplotlib. The simulation will output a graph showing the package delivery route taken by the algorithm.
-
-Authors
-Your Name - Initial work - YourUsername
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
-Note
-The project pdf file is also provided, you can view it for further information about the project, problem, and the solution proposed.
+<h1>Package Delivery Simulation</h1>
+<h2>Overview</h2>
+<p>This project is a workshop in using data structures and algorithms to solve simulated real world problems. The simulation involves a package delivery system using the nearest neighbor algorithm. The only prerequisite for this workshop is knowledge of Python.</p>
+<h2>Installation</h2>
+<p>Clone the repository to your local machine and navigate to the project directory in your terminal.</p>
+<h2>Usage</h2>
+<p>The simulation can be run by executing the main.py file. The program will prompt the user for input on the number of packages and the location of each package. The program will then output the optimal delivery route using the nearest neighbor algorithm.</p>
+<h2>Documentation</h2>
+<p>A detailed walk-through of the project and the algorithms used can be found in the included pdf file.</p>
