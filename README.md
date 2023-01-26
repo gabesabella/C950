@@ -1,11 +1,33 @@
-<h1>Package Delivery Simulation</h1>
-<h2>Overview</h2>
-<p>This project is a workshop in using data structures and algorithms to solve simulated real world problems. The simulation involves a package delivery system using the nearest neighbor algorithm. The only prerequisite for this workshop is a current version of Python.</p>
-<h2>Installation</h2>
-<p>Clone the repository to your local machine and navigate to the project directory in your terminal.</p>
-<h2>Run the program</h2>
-<p>Run <code>python main.py</code> in the project directory and follow the prompts.</p>
-<h2>Usage</h2>
-<p>The simulation can be run by executing the main.py file. The program will prompt the user for input on the number of packages and the location of each package. The program will then output the optimal delivery route using the nearest neighbor algorithm.</p>
-<h2>Documentation</h2>
-<p>A detailed walk-through of the project and the algorithms used can be found in the included pdf file.</p>
+<h1> Package Delivery System </h1>
+
+<h2> Description </h2>
+<p>
+    This package delivery system is built using Python and utilizes CSV data for delivery addresses and their distances to one another, as well as package constraints. This project is the main project for C950 of WGU's computer science program.
+</p>
+
+<h2> Features </h2>
+<ul>
+    <li>Uses CSV data for delivery addresses and distances</li>
+    <li>Takes package constraints into account when creating delivery routes</li>
+    <li>Generates optimized delivery routes for efficient package delivery</li>
+</ul>
+
+<h2> Requirements </h2>
+<ul>
+    <li>Python 3.6 or later</li>
+</ul>
+
+<h2> Installation </h2>
+<ol>
+    <li>Ensure that all requirements are met</li>
+    <li>Clone the repository using the command: 
+    <code>git clone https://github.com/yourusername/PackageDeliverySystem.git</code>
+    </li>
+    <li>Navigate to the root directory of the cloned repository</li>
+</ol>
+
+<h2> Usage </h2>
+<ol>
+    <li>Run the command <code>python main.py</code> in the root directory of the repository to start the program</li>
+    <li>Follow the prompts to view packages at desired times.</li>
+</ol>
